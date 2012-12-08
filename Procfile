@@ -1,1 +1,1 @@
-web: bin/hubot -a twilio -n Hubot
+web: bin/hubot -a twilio

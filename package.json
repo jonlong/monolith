@@ -16,7 +16,7 @@
 
   "dependencies": {
     "hubot": "git://github.com/jonlong/hubot.git",
-    "hubot-twilio": ">= 0.0.1",
+    "hubot-twilio": "*",
     "hubot-scripts": ">= 2.1.0",
     "optparse": "1.0.3"
   },
