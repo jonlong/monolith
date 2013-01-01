@@ -1,0 +1,25 @@
+var config = {};
+
+// People
+
+config.jon = {
+  jawbone: {
+    // once a minute
+    pollingRate: '* * * * *',
+    username: process.env.HUBOT_JAWBONE_USERNAME,
+    password: process.env.HUBOT_JAWBONE_PASSWORD
+  },
+  icloud: {
+    calendars: ['webcal://p01-calendarws.icloud.com/ca/subscribe/1/JrXLYDPwBqvU-J0SekAkhgOuAp9wJ_CFJClIeIKt9BXXd7UZpu8oWdCSJSIM6STtwBNsELtIcHiCuhrWYaVhm6asdqpfErSVC2nXuuLquP4'],
+    // once every five minutes
+    pollingRate: '*/5 * * * *'
+  }
+};
+
+// Spaces
+
+config.environment = {
+
+};
+
+module.exports = config;
