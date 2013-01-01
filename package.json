@@ -17,8 +17,16 @@
   "dependencies": {
     "hubot": "git://github.com/jonlong/hubot.git",
     "hubot-twilio": "*",
+    "jade": "0.27.x",
+    "socket.io": "0.9.x",
+    "cron": "1.0.x",
+    "request": "2.12.x",
+    "node-up": "1.0.x",
+    "hubot-twilio": "*",
     "hubot-scripts": ">= 2.1.0",
-    "optparse": "1.0.3"
+    "optparse": "1.0.3",
+    "ical": "0.0.x",
+    "jsonfile": "0.0.x"
   },
 
   "engines": {

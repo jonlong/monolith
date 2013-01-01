@@ -1,0 +1,21 @@
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/dashboard/css/dashboard.css')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+		script(src='/dashboard/js/socket.io.min.js')
+		script
+			var socketHostUrl = window.location.hostname;
+			var socket = io.connect('http://'+socketHostUrl+":"+#{socketPort}, {
+			'reconnect': true,
+			'force new connection': true,
+			'reconnection delay': 500,
+			'max reconnection attempts': 10
+			});
+	body
+		div.container
+			block content
+			img#hal(src='http://people.ict.usc.edu/~pynadath/images/hal-9000-eye.jpg')
+			#content
+		script(src='/dashboard/js/script.js')
