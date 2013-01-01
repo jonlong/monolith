@@ -10,7 +10,9 @@ config.jon = {
     password: process.env.HUBOT_JAWBONE_PASSWORD
   },
   icloud: {
-    calendars: ['webcal://p01-calendarws.icloud.com/ca/subscribe/1/JrXLYDPwBqvU-J0SekAkhgOuAp9wJ_CFJClIeIKt9BXXd7UZpu8oWdCSJSIM6STtwBNsELtIcHiCuhrWYaVhm6asdqpfErSVC2nXuuLquP4'],
+    // Must be a 'public' calendar on iCloud
+    // replace 'webcal://' with 'https://'
+    calendars: ['https://p01-calendarws.icloud.com/ca/subscribe/1/JrXLYDPwBqvU-J0SekAkhgOuAp9wJ_CFJClIeIKt9BXXd7UZpu8oWdCSJSIM6STtwBNsELtIcHiCuhrWYaVhm6asdqpfErSVC2nXuuLquP4'],
     // once every five minutes
     pollingRate: '*/5 * * * *'
   }
